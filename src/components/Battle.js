@@ -151,7 +151,7 @@ const Battle = () => {
         if (listQuestion && listQuestion.length > 0) {
           const randomIndex = Math.floor(Math.random() * listQuestion.length);
           const newQuestion = listQuestion[randomIndex];
-
+          console.log('listQuestion', listQuestion);
           // Update the question in the database
           await set(
             ref(getDatabase(app), "quiz/question"),
