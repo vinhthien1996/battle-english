@@ -115,9 +115,7 @@ const Battle = () => {
   
       // Check if the answer is correct
       if (text === question.en) {
-        // Update user's message count for a correct answer
-        const userRef = ref(getDatabase(app), `users/${userId}`);
-        const userSnapshot = await get(userRef);
+
         textMessage = {
           text,
           success: true,

@@ -26,7 +26,7 @@ const UserList = ({ users, messages, onWarning }) => {
     if(sortedUsers[0]?.cpu >= 80) {
       onWarning(true);
     }
-  }, [sortedUsers]);
+  }, [onWarning, sortedUsers]);
 
   return (
     <div className="flex gap-2">

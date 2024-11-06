@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BugAntIcon } from "@heroicons/react/24/outline";
 
 const InputArea = ({ onSendMessage }) => {
   const [inputValue, setInputValue] = useState("");
