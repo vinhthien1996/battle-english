@@ -157,9 +157,9 @@ const Battle = () => {
             ref(getDatabase(app), "quiz/question"),
             JSON.stringify(newQuestion)
           );
-          setListQuestion((prevList) =>
-            prevList.filter((_, index) => index !== randomIndex)
-          ); // Remove the used question
+          // setListQuestion((prevList) =>
+          //   prevList.filter((_, index) => index !== randomIndex)
+          // ); // Remove the used question
           setQuestion(newQuestion); // Update the state with the new question
         }
       } else {
